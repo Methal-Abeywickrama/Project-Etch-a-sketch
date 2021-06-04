@@ -1,2 +1,2 @@
 # Project-Etch-a-sketch
-Part of the odin project curriculum
+This is written as a part of the odin project curriculum
