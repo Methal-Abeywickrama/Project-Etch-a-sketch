@@ -1,34 +1,58 @@
+:root {
+    --num: 16;
+    --length: 60px;
+    --leftMargin: ;
+}
 
 .container {
+    margin: auto;
+    width: 600px;
     display: grid;
-    grid-template-columns: repeat(16, 50px);
+    grid-template-columns: repeat(var(--num), var(--length));
 }
 
 
-.row {
-    display: flex;
-    flex-direction: row;
-}
 
 .box {
-    color: rgb(240, 240, 240);
-    background-color: rgb(245, 157, 157);
-    min-height: 50px;
-    min-width: 50px;
-
+    color: white;
+    background-color: white;
+    border-color: black;
+    height: var(--length);
+    max-height: var(--length);
 }
+
+
 
 .passedOver {
     background-color: black;
 }
-/*
-.row {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, auto-fit);
+
+body {
+    background-color: rgba(46, 103, 179, 0.753);
+    text-align: center;
 }
 
-.container {
-    display: grid;
-    grid-template-rows: repeat(auto-fill, auto-fit);
+h1 {
+    font-size: 50px;
 }
-*/
+
+button {
+    width: 150px;
+    height: 40px;
+    margin-top: 25px;
+    position: relative;
+    display: inline-block;
+    border-radius: 3px;
+    outline: none;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.15384615;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgb(34, 98, 172);
+    color: white;
+    border-color: transparent;
+}
